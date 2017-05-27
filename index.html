@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>choi-minimus index</title>
+    
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id='mainContainer'>
+        <div id="header">
+            <div class="left">
+                <ul>
+                    <li><h4>choi-minimus - Registration / Login</h4></li>
+                    <li><h4><a href="pages/dashboard.html">To Dashboard</a></h4></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><h4><a href="pages/dashboard.html">To Dashboard</a></h4></li>
+                    <li><h4><a href="index.html">Logout</a></h4></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="body">
+            <div id='body-top'>
+                <div class='left'>
+                    <h2>Enter Your Information - Left</h2>
+                </div>
+                <div class='right'>
+                    <h2>Enter Your Information - Right</h2>
+                </div>
+            </div>
+            <div id='top'>
+                <div class='left'>
+
+                <p class="errors">Paragraph Class for Errors - Registration</p>
+                
+                    <form action="/addUser" method="POST">
+                        <h3>Registration:</h3><br>
+                        <label><h4 class='h4label'>First Name:  </h4></label>
+                        <input class='inputTextLeft' type='text' name='First_Name' placeholder='Please Enter Your First Name Here'>
+
+                        <label><h4 class='h4label'>Last Name:  </h4></label>
+                        <input class='inputTextLeft' type='text' name='Last_Name' placeholder='Please Enter Your Last Name Here'>
+                        
+                        <label><h4 class='h4label'>Username:  </h4></label>
+                        <input class='inputTextLeft' type='text' name='Username' placeholder='Please Enter Your Username Here'>
+                        
+                        <label><h4 class='h4label'>Email:  </h4></label>
+                        <input class='inputTextLeft' type='email' name='Email' placeholder='Please Enter Your Email Here'>
+                        
+                        <label><h4 class='h4label'>Password:  </h4></label>
+                        <input class='inputTextLeft' type='text' name='Password' placeholder='Please Enter Your Password Here'>
+                        
+                        <label><h4 class='h4label'>Password Confirmation:  </h4></label>
+                        <input class='inputTextLeft' type='text' name='PasswordConfirmation' placeholder='Please Enter Your Password Confirmation Here'>
+                        <div class="btn-left">
+                            <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Left'>
+                        </div>
+                        <!--<div class="btn-center">
+                            <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Center'>
+                        </div>-->
+                        <!--<div class="btn-right">
+                            <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Right'>
+                        </div>-->
+                    </form>
+                </div>
+                <div class='right'>
+                    <p class="errors">Paragraph Class for Errors - Login</p>
+                    
+                    <form action="/checkUser" method="POST">
+                        <h3>Login:</h3><br>
+                        <label><h4 class='h4label'>Email:  </h4></label>
+                        <input class='inputTextRight' type='text' name='Email' placeholder='Please Enter Your Email Here'>
+                        
+                        <label><h4 class='h4label'>Password:  </h4></label>
+                        <input class='inputTextRight' type='text' name='Password' placeholder='Please Enter Your Password Here'>
+                        
+                        <div class="btn-left">
+                            <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Left'>
+                        </div>
+                    </form>
+                </div>
+                <br>
+            </div>
+            <div id="bot">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

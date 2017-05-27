@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>choi-minimus showUser - All / One</title>
+    
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <div id='mainContainer'>
+        <div id="header">
+            <div class="left">
+                <ul>
+                    <li><h4>choi-minimus - showUser - All / One</h4></li>
+                    <li><h4><a href="dashboard.html">Return to Dashboard</a></h4></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><h4>Hello {First Name}!</h4></li>
+                    <li><h4><a href="../index.html">Logout</a></h4></li>
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+            <hr>
+            <br>
+            <div id="body-top">
+                <h2>Show All Users Page</h4>
+            </div>
+            <div id="section">
+                <table cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th>User Id:</th>
+                            <th>User Name:</th>
+                            <th>Email:</th>
+                            <th>Created At:</th>
+                            <th>Admin Action</th>
+                            <th>Edit User</th>
+                            <th>User Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="center">
+                            <td>01</td>
+                            <td>Tim Tam</td>
+                            <td>timtam@gmail.com</td>
+                            <td>April 09, 2017 at 18:20</td>
+                            <td>
+                                <form action='#' method="POST">
+                                    <input class="btnSubmit btnRedHov" type="submit" name="" value="Remove Rights">
+                                </form>
+                                <form action='#' method="POST">
+                                    <input class="btnSubmit btnGreenHov" type="submit" name="" value="Grant Rights">
+                                </form>
+                            </td>
+                            <td>
+                                <form action='#' method="POST">
+                                    <input class="btnSubmit btnBlueHov" type="submit" name="" value="Edit User Information">
+                                </form>
+                            </td>
+                            <td>
+                                <form action='#' method="POST">
+                                    <input class="btnSubmit btnRedHov" type="submit" name="" value="Delete User">
+                                </form>
+                            </td>
+                        </tr>
+                        <tr class="center">
+                            <td>02</td>
+                            <td>Shim Sham</td>
+                            <td>shimsham@gmail.com</td>
+                            <td>April 10, 2017 at 18:20</td>
+                            <td>
+                                <form action='#' method="POST">
+                                    <input class="btnSubmit btnRedHov" type="submit" name="" value="Remove Rights">
+                                </form>
+                                <form action='#' method="POST">
+                                    <input class="btnSubmit btnGreenHov" type="submit" name="" value="Grant Rights">
+                                </form>
+                            </td>
+                            <td>
+                                <form action='#' method="POST">
+                                    <input class="btnSubmit btnBlueHov" type="submit" name="" value="Edit User Information">
+                                </form>
+                            </td>
+                            <td>
+                                <form action='#' method="POST">
+                                    <input class="btnSubmit btnRedHov" type="submit" name="" value="Delete User">
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+            <div id='body-top'>
+                <div class='left'>
+                </div>
+                <div class='right'>
+                </div>
+            </div>
+            <div id='section'>
+                <div class='left'>
+                    <h2>{First_Name} {Last_Name}'s Show Page</h2>
+                    <hr>
+                    <br>
+                    <label><h3 class='showLabel'>User Information:  </h3></label><br>
+                    <label><h4 class='showLabel indent'>User Id:  </h4></label><h4 class='h4Space'>{User_Id}</h4><br>
+                    <label><h4 class='showLabel indent'>Name:  </h4></label><h4 class='h4Space'>{First_Name} {Last_Name}</h4><br>
+                    <label><h4 class='showLabel indent'>Username:  </h4></label><h4 class='h4Space'>{Username}</h4><br>
+                    <label><h4 class='showLabel indent'>Email:  </h4></label><h4 class='h4Space'>{Email}</h4><br>
+                <label><h4 class='showLabel indent'>Member Since:  </h4></label><h4 class='h4Space'>{April 09, 2017 at 18:20}</h4><br>
+                    <br>
+                    <hr>
+                    <br>
+                    <label><h3 class='showLabel'>Items Created:  </h3></label><br>
+                    <label><h4 class='showLabel indent'>Total #Created:  </h4></label><h4 class='h4Space'>{ # Created Count }</h4><br>
+                    
+                    <br>
+                    <hr>
+                    <br>
+                    <label><h3 class='showLabel'>Items Liked:  </h3></label><br>
+                    <label><h4 class='showLabel indent'>Total #Liked:  </h4></label><h4 class='h4Space'>{ # Like Count }</h4><br>
+                </div>
+                <div class="right">
+                    <h2>{First_Name} {Last_Name}'s Show Page</h2>
+                    <hr>
+                    <br>
+                    <label><h3 class='showLabel'>User Information:  </h3></label><br>
+                    <table cellspacing="0" cellpadding="0">
+                    <!--<thead>
+                        <tr>
+                            <th>User Id:</th>
+                            <th>Name:</th>
+
+                        </tr>
+                    </thead>-->
+                    <tbody>
+                        <tr>
+                            <td>User Id:</td>
+                            <td class="center">{User_Id}</td>
+                        </tr>
+                        <tr>
+                            <td>Name: </td>
+                            <td class="center">{First_Name} {Last_Name}</td>
+                        </tr>
+                        <tr>
+                            <td>Email: </td>
+                            <td class="center">{Email}</td>
+                        </tr>
+                        <tr>
+                            <td>Created At: </td>
+                            <td class="center">{April 09, 2017 at 18:20}</td>
+                        </tr>
+                        <tr>
+                            <td>Total #Items Created: </td>
+                            <td class="center">{ # Items Created Count }</td>
+                        </tr>
+                        <tr>
+                            <td>Total #Items Liked: </td>
+                            <td class="center">{ # Items Like Count }</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

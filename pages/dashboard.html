@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>choi-minimus index</title>
+    
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <div id='mainContainer'>
+        <div id="header">
+            <div class="left">
+                <ul>
+                    <li><h4>choi-minimus - Dashboard</h4></li>
+                    <li><h4><a href="showUser.html">To showUser Page</a></h4></li>
+                    <li><h4><a href="showItem.html">To showIdea Page</a></h4></li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><h4>Hello {First Name}!</h4></li>
+                    <li><h4><a href="../index.html">Logout</a></h4></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="body">
+            <!--<br>-->
+            <div id='body-top'>
+                <div class='left'>
+                    <h2>App Dashboard Page</h2>
+                </div>
+            </div>
+            <div id='section'>
+                <form action="/addItem" method="POST">
+                    <label><h4 class='h4label'>Submit an Item</h4></label>
+                    <textarea class="textAreaItem" name="contentIdea" rows="6" cols="20" placeholder="Your Item Goes Here..."></textarea>
+                    <div class="btn-left">
+                        <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Left'>
+                    </div>
+                    <!--<div class="btn-center">
+                        <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Center'>
+                    </div>-->
+                    <!--<div class="btn-right">
+                        <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Right'>
+                    </div>-->
+                </form>
+            </div>
+            <br><br>
+            <hr>
+            <br>
+            <br>
+            <div id="section">
+                <div id="message">
+                    <h3>Post an Item Message:</h3>
+                    <hr>
+                    <div id="section">
+                        <form action="/addItemMessage" method="POST">
+                            <label><h4 class='h4label'>Submit a Message on an Item</h4></label>
+                            <textarea class="textAreaItem" name="contentIdea" rows="6" cols="20" placeholder="Your Item Message Goes Here..."></textarea>
+                            <div class="btn-left">
+                                <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Left'>
+                            </div>
+                            <br><br>
+                            <!--<div class="btn-center">
+                                <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Center'>
+                            </div>-->
+                            <!--<div class="btn-right">
+                                <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Right'>
+                            </div>-->
+                        </form>
+                    </div>
+                    <hr>
+                    <br>
+                    <br>
+                    <div id="message_no">
+                        <h3>All Posted Item Messages:</h3>
+                        <hr>
+                        <div class='left'>
+                            <div class="top">
+                                <h4><a href="#">First / Last Name</a> says:</h4>        
+                            </div>
+                            <div class="bot">
+                                <input class="btnSubmit btnRedHov" type="submit" name="" value="Delete Message">
+                            </div>
+                        </div>
+                        <div class='right'>
+                            <div class='r-top'>
+                                <p>Item Message Content</p>
+                            </div>
+                            <div class='r-bot'>
+                                <div class='r-bot-left'>
+                                    <!--<td>-->
+                                        <form action="#" method="POST">
+                                            <input type="hidden" name="UserIdPass" value=''>
+                                            <input type="hidden" name="ItemIdPass" value=''>
+                                            <input class="btnSubmit btnBlueHov btnMarginRight" type="submit" name="" value="Unlike This Item">
+                                        </form>
+                                    <!--</td>-->
+                                    <!--<td>-->
+                                        <form action="#" method="POST">
+                                            <input type="hidden" name="UserIdPass" value=''>
+                                            <input type="hidden" name="ItemIdPass" value=''>
+                                            <input class="btnSubmit btnBlue btnMarginRight" type="submit" name="" value="Like This Item">
+                                        </form>
+                                    <!--</td>-->
+                                </div>
+                                <div class='r-bot-right'>
+                                    <h5><a href="#">#</a> likes this</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <hr>
+                            <br>
+                            <h3>Post an Item Comment:</h3>
+                            <hr>
+                            <div id="section">
+                                <form action="/addIdea" method="POST">
+                                    <label><h4 class='h4label'>Submit a Comment on an Item</h4></label>
+                                    <textarea class="textAreaItem" name="contentIdea" rows="6" cols="20" placeholder="Your Item Goes Here..."></textarea>
+                                    <div class="btn-left">
+                                        <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Left'>
+                                    </div>
+                                    <!--<div class="btn-center">
+                                        <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Center'>
+                                    </div>-->
+                                    <!--<div class="btn-right">
+                                        <input class='btnSubmit btnGreen' type='submit' value='Submit Button - Right'>
+                                    </div>-->
+                                    <br><br>
+                                </form>
+                            <hr>
+                            <br>
+                            <br>
+                            </div>
+                            <div id="message_no">
+                                <h3>All Posted Item Messages:</h3>
+                                <hr>
+                                <div class='left'>
+                                    <div class="top">
+                                        <h4><a href="#">First / Last Name</a> says:</h4>     
+                                    </div>
+                                    <div class="bot">
+                                        <input class="btnSubmit btnRedHov" type="submit" name="" value="Delete Comment">
+                                    </div>
+                                </div>
+                                <div class='right'>
+                                    <div class='r-top'>
+                                        <p>Item Message Comment Content</p>
+                                    </div>
+                                    <div class='r-bot'>
+                                        <div class='r-bot-left'>
+                                            <!--<td>-->
+                                                <form action="#" method="POST">
+                                                    <input type="hidden" name="UserIdPass" value=''>
+                                                    <input type="hidden" name="ItemIdPass" value=''>
+                                                    <input class="btnSubmit btnBlueHov btnMarginRight" type="submit" name="" value="Unlike This Item">
+                                                </form>
+                                            <!--</td>-->
+                                            <!--<td>-->
+                                                <form action="#" method="POST">
+                                                    <input type="hidden" name="UserIdPass" value=''>
+                                                    <input type="hidden" name="ItemIdPass" value=''>
+                                                    <input class="btnSubmit btnBlue btnMarginRight" type="submit" name="" value="Like This Item">
+                                                </form>
+                                            <!--</td>-->
+                                        </div>
+                                        <div class='r-bot-right'>
+                                            <h5><a href="#">#</a> likes this</h5>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <br>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                <div id="message">
+                    <h3>All Posted Items:</h3>
+                    <hr>
+                    <div class='left'>
+                        <div class="top">
+                            <h4><a href="#">First / Last Name</a> says:</h4>        
+                        </div>
+                        <div class="bot">
+                            <input class="btnSubmit btnRedHov" type="submit" name="" value="Delete Your Item">
+                        </div>
+                    </div>
+                    <div class='right'>
+                        <div class='r-top'>
+                            <p>Item Content</p>
+                        </div>
+                        <div class='r-bot'>
+                            <div class='r-bot-left'>
+                                <form action="#" method="POST">
+                                    <input type="hidden" name="UserIdPass" value=''>
+                                    <input type="hidden" name="ItemIdPass" value=''>
+                                    <input class="btnSubmit btnBlueHov btnMarginRight" type="submit" name="" value="Unlike This Item">
+                                </form>
+                                <form action="#" method="POST">
+                                    <input type="hidden" name="UserIdPass" value=''>
+                                    <input type="hidden" name="ItemIdPass" value=''>
+                                    <input class="btnSubmit btnBlue btnMarginRight" type="submit" name="" value="Like This Item">
+                                </form>
+                            </div>
+                            <div class='r-bot-right'>
+                                <h5><a href="#">#</a> likes this</h5>
+                            </div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
